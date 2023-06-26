@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+		<title>Document</title>
+    
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+		<script src="script.js" defer></script>
+	</head>
+<body>
+	<div class="container">
+		<main class="card">
+			<form>
+				<h1>BMI Calculation</h1>
+				
+				<div class="input-wrapper">
+					<label for="weight">Weight (Kg)</label>
+					<input
+						id="weight"
+						type="number"
+						step="0.01"
+						placeholder="Weight in Kilograms."
+						required
+					/>
+				</div>
+
+				<div class="input-wrapper">
+					<label for="height">Height (m)</label>
+					<input
+						id="height"
+						type="number"
+						step="0.01"
+						placeholder="Height in meters."
+						required
+					/>
+				</div>
+				
+				<button type="submit">
+					Calculate BMI
+					<img src="assets/arrow.svg" alt="White arrow from right to left.">
+				</button>
+			</form>
+		</main>
+	</div>
+
+	<div class="modal-wrapper">
+		<div class="modal card">
+			<button><img src="assets/close.svg" alt="Cross to close popup."></button>
+			<h2></h2>
+		</div>
+	</div>
+
+	<div class="alert-error">
+		Enter numbers only.
+	</div>
+</body>
+</html>
